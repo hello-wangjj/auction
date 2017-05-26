@@ -20,11 +20,13 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../node_modules/bootstrap/dist/css/bootstrap.css"
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "assets/css/star-rating.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.js"
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "assets/js/star-rating.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
