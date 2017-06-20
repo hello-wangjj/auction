@@ -7,6 +7,6 @@ import {ProductDetailComponent} from "./product-detail/product-detail.component"
 const APP_ROUTES_CONFIG: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
-  {path: 'product/:productTitle', component: ProductDetailComponent}
+  {path: 'product/:productId', component: ProductDetailComponent}
 ]
 export const app_routing_config = RouterModule.forRoot(APP_ROUTES_CONFIG);

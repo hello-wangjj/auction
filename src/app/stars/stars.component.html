@@ -1,7 +1,7 @@
+<!--<p>-->
+  <!--<input id="input-id" type="number" class="rating" data-min="0" data-max="5" data-step="0.5" data-size="xs" value="{{rating}}" data-readonly="true" data-show-clear="false">-->
+<!--</p>-->
 <p>
-  <input id="input-id" type="number" class="rating" data-min="0" data-max="5" data-step="0.5" data-size="xs" value="{{rating}}" data-readonly="true" data-show-clear="false">
-</p>
-<p>
-  <span class="glyphicon glyphicon-star" *ngFor="let star of stars" [class.glyphicon-star-empty]="star"></span>
-  <span>{{rating}}星</span>
+  <span class="glyphicon glyphicon-star" *ngFor="let star of stars; let i = index" [class.glyphicon-star-empty]="star" (click)="clickStar(i)"></span>
+  <span>{{rating | number:'1.0-1'}}星</span>
 </p>
